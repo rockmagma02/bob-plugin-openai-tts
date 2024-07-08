@@ -1,0 +1,19 @@
+{
+  "identifier": "ruiyang.sun.open.ai.tts.bob.plugin",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "desc": "OpenAI TTS: a plugin for bob community version",
+      "sha256": "f754ee5cefad258eb0428395204283e7c43d500a0be3d2ffbb853ac32d58d100",
+      "url": "https://github.com/rockmagma02/bob-plugin-openai-tts/releases/download/v1.0.0/openai-tts-1-0-0.bobplugin",
+      "minBobVersion": "0.5.0"
+    },
+    {
+      "version": "2.0.0",
+      "desc": "OpenAI TTS: a plugin for bob",
+      "sha256": "80e14b953e5b8ff9547286fa2995ee57d9afa19305029cc91d346852fe0493b5",
+      "url": "https://github.com/rockmagma02/bob-plugin-openai-tts/releases/download/v2.0.0/openai-tts-2-0-0.bobplugin",
+      "minBobVersion": "1.8.0"
+    }
+  ]
+}

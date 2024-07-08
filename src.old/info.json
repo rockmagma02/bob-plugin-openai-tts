@@ -1,0 +1,123 @@
+{
+  "identifier": "ruiyang.sun.open.ai.tts.bob.plugin",
+  "version": "1.0.0",
+  "category": "tts",
+  "name": "OpenAI TTS",
+  "summary": "powered by OpenAI's TTS model.",
+  "icon": "",
+  "author": "Ruiyang.Sun <rockmagma02@gmail.com>",
+  "homepage": "https://github.com/rockmagma02/bob-plugin-openai-tts",
+  "appcast": "https://raw.githubusercontent.com/rockmagma02/bob-plugin-openai-tts/main/appcast.json",
+  "minBobVersion": "0.5.0",
+  "options": [
+    {
+      "identifier": "apiUrl",
+      "type": "text",
+      "title": "API URL",
+      "defaultValue": "https://api.openai.com",
+      "desc": "可选项。如果您的网络环境需要代理才能访问 OpenAI API, 可在这里修改为反代 API 的地址"
+    },
+    {
+      "identifier": "deploymentName",
+      "type": "text",
+      "title": "Dep. Name",
+      "desc": "可选项。此值为在部署 Azure 模型时为部署选择的自定义名称，可在 Azure 门户中的 “资源管理”＞“部署” 下查看"
+    },
+    {
+      "identifier": "apiVersion",
+      "type": "text",
+      "title": "API Version",
+      "desc": "可选项。此值为在使用 Azure 模型时采用的 Chat completions API 版本，不支持 2023-03-15-preview 之前的版本"
+    },
+    {
+      "identifier": "apiKeys",
+      "type": "text",
+      "title": "API KEY",
+      "desc": "必填项。可以用英文逗号分割多个 API KEY 以实现额度加倍及负载均衡"
+    },
+    {
+      "identifier": "model",
+      "type": "menu",
+      "title": "模型",
+      "defaultValue": "tts-1",
+      "menuValues": [
+        {
+          "title": "tts-1",
+          "value": "tts-1"
+        },
+        {
+          "title": "tts-1-hd",
+          "value": "tts-1-hd"
+        }
+      ]
+    },
+    {
+      "identifier": "voice",
+      "type": "menu",
+      "title": "声音",
+      "defaultValue": "alloy",
+      "menuValues": [
+        {
+          "title": "alloy",
+          "value": "alloy"
+        },
+        {
+          "title": "echo",
+          "value": "echo"
+        },
+        {
+          "title": "fable",
+          "value": "fable"
+        },
+        {
+          "title": "onyx",
+          "value": "onyx"
+        },
+        {
+          "title": "nova",
+          "value": "nova"
+        },
+        {
+          "title": "shimmer",
+          "value": "shimmer"
+        }
+      ]
+    },
+    {
+      "identifier": "speed",
+      "type": "menu",
+      "title": "语速",
+      "defaultValue": "1.0",
+      "menuValues": [
+        {
+          "title": "0.25",
+          "value": "0.25"
+        },
+        {
+          "title": "0.5",
+          "value": "0.5"
+        },
+        {
+          "title": "0.75",
+          "value": "0.75"
+        },
+        {
+          "title": "1.0",
+          "value": "1.0"
+        },
+        {
+          "title": "2.0",
+          "value": "2.0"
+        },
+        {
+          "title": "3.0",
+          "value": "3.0"
+        },
+        {
+          "title": "4.0",
+          "value": "4.0"
+        }
+      ]
+    }
+  ]
+}
