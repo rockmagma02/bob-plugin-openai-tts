@@ -9,10 +9,24 @@
       "minBobVersion": "0.5.0"
     },
     {
+      "version": "1.1.0",
+      "desc": "OpenAI TTS: a plugin for bob",
+      "sha256": "21de85ab15453fc31a0c1266bcc570f0487480cfc29aba2f2802d8afa3ad4cfb",
+      "url": "https://github.com/rockmagma02/bob-plugin-openai-tts/releases/download/v1.1.0/openai-tts-1-1-0.bobplugin",
+      "minBobVersion": "0.5.0"
+    },
+    {
       "version": "2.0.0",
       "desc": "OpenAI TTS: a plugin for bob",
       "sha256": "80e14b953e5b8ff9547286fa2995ee57d9afa19305029cc91d346852fe0493b5",
       "url": "https://github.com/rockmagma02/bob-plugin-openai-tts/releases/download/v2.0.0/openai-tts-2-0-0.bobplugin",
+      "minBobVersion": "1.8.0"
+    },
+    {
+      "version": "2.1.0",
+      "desc": "OpenAI TTS: a plugin for bob",
+      "sha256": "51791e97e756d509c593e6dbf1a0fe0b771d470099ddb16e14cc0f80a38753bc",
+      "url": "https://github.com/rockmagma02/bob-plugin-openai-tts/releases/download/v2.0.0/openai-tts-2-1-0.bobplugin",
       "minBobVersion": "1.8.0"
     }
   ]
