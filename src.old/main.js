@@ -54,6 +54,17 @@ function tts(query, completion) {
         return;
     }
 
+    if (!parseFloat(speed) || parseFloat(speed) < 0.25 || parseFloat(speed) > 4.0) {
+        completion(
+            {
+                error: {
+                    type: 'param',
+                    message: '语速参数错误 - 请输入一个有效的数字'
+                }
+            }
+        )
+    }
+
     const apiKey = getApiKey(apiKeys);
     const baseUrl = ensureHttpsAndNoTrailingSlash(apiUrl || "https://api.openai.com");
     let apiUrlPath = baseUrl.includes("gateway.ai.cloudflare.com") ? "/audio/speech" : "/v1/audio/speech";

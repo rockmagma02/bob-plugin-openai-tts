@@ -76,6 +76,19 @@ function tts(query, completion) {
     }
 
     const header = buildHeader(isAzureServiceProvider, apiKey);
+
+    if (!parseFloat(speed) || parseFloat(speed) < 0.25 || parseFloat(speed) > 4.0) {
+        completion(
+            {
+                error: {
+                    type: 'param',
+                    message: '语速参数错误 - 请输入一个有效的数字'
+                }
+            }
+        )
+        return;
+    }
+
     const body = {
         model: model || "tts-1",
         input: query.text,
