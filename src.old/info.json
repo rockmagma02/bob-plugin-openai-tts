@@ -1,6 +1,6 @@
 {
   "identifier": "ruiyang.sun.open.ai.tts.bob.plugin",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "category": "tts",
   "name": "OpenAI TTS",
   "summary": "powered by OpenAI's TTS model.",
@@ -85,39 +85,14 @@
     },
     {
       "identifier": "speed",
-      "type": "menu",
+      "type": "text",
       "title": "语速",
       "defaultValue": "1.0",
-      "menuValues": [
-        {
-          "title": "0.25",
-          "value": "0.25"
-        },
-        {
-          "title": "0.5",
-          "value": "0.5"
-        },
-        {
-          "title": "0.75",
-          "value": "0.75"
-        },
-        {
-          "title": "1.0",
-          "value": "1.0"
-        },
-        {
-          "title": "2.0",
-          "value": "2.0"
-        },
-        {
-          "title": "3.0",
-          "value": "3.0"
-        },
-        {
-          "title": "4.0",
-          "value": "4.0"
-        }
-      ]
+      "desc": "自定义语音合成的语速, 范围 0.25 - 4.0",
+      "textConfig": {
+        "type": "visible",
+        "placeholderText": "1.0"
+      }
     }
   ]
 }
